@@ -6,7 +6,7 @@
 </head>
 <body>
 <h2 th:text="${boardDto.title}"></h2>
-<p th:inline="text">작성일 : [[${#temporals.format(boardDto.createdDate, 'yyyy-MM-dd HH:mm')}]]</p>
+<p th:inline="text">작성일 : [[${#temporals.format(boardDto.createDate, 'yyyy-MM-dd HH:mm')}]]</p>
 
 <p th:text="${boardDto.content}"></p>
 

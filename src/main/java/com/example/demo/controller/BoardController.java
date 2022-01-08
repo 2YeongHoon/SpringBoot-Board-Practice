@@ -41,7 +41,7 @@ public class BoardController {
         return "redirect:/";
     }
 
-    @PostMapping("/post/{no}")
+    @GetMapping("/post/{no}")
     public String detail(@PathVariable("no") Long id, Model model)
     {
         BoardDto boardDto = boardService.getPost(id);
