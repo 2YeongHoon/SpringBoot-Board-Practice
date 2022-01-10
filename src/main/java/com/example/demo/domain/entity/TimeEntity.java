@@ -17,8 +17,8 @@ public class TimeEntity {
 
     @CreatedDate
     @Column(updatable = false)
-    private LocalDateTime createData;
+    private LocalDateTime createDate;
 
     @LastModifiedDate
-    private LocalDateTime modifiedData;
+    private LocalDateTime modifiedDate;
 }
